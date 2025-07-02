@@ -1,0 +1,6 @@
+com\example\referral\controller\UserController.class
+com\example\referral\service\UserService.class
+com\example\referral\repository\UserRepository.class
+com\example\referral\dto\UserSignupRequest.class
+com\example\referral\model\User.class
+com\example\referral\ReferralSignupApiApplication.class
