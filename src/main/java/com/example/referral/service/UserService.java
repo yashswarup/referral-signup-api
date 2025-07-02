@@ -17,6 +17,11 @@ public class UserService {
     @Autowired
     private UserRepository userRepository;
 
+    public UserService(UserRepository userRepository) {
+    this.userRepository = userRepository;
+}
+
+
     public User signup(String name, String email, String password, String referralCode) {
         User user = new User();
         user.setName(name);
@@ -31,6 +36,8 @@ public class UserService {
 
         return userRepository.save(user);
     }
+
+    
     public void completeProfile(Long id) {
     try {
         Optional<User> userOpt = userRepository.findById(id);
@@ -56,6 +63,10 @@ public class UserService {
 }
     public List<User> getAllUsers() {
     return userRepository.findAll();
+}
+
+    public List<User> getReferrals(Long userId) {
+    return userRepository.findByReferrerId(userId);
 }
 
 

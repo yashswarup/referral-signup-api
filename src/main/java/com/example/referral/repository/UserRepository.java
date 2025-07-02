@@ -10,6 +10,6 @@ import com.example.referral.model.User;
 
 public interface UserRepository extends JpaRepository<User, Long> {
     List<User> findByReferredByIdAndProfileCompletedTrue(Long referredById);
-
+    List<User> findByReferrerId(Long referrerId);
     Optional<User> findByReferralCode(String referralCode);
 }
