@@ -68,7 +68,7 @@ curl.exe https://referral-signup-api-production.up.railway.app/api/referrals/1
 - ✅ Deployed on [Railway](https://railway.app)
 - ✅ Public URL: `https://referral-signup-api-production.up.railway.app`
 - ✅ Database: In-memory H2
-- ✅ GitHub Repo: [Add your GitHub link here]
+- ✅ GitHub Repo: https://github.com/yashswarup
 
 ## Running Locally
 
