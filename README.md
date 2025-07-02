@@ -48,34 +48,3 @@ This project is a **Java Spring Boot API** that implements a **referral-based us
   "password": "yash123"
 }
 
-With referral:
-
-{
-  "name": "Aman",
-  "email": "aman@gmail.com",
-  "password": "aman123",
-  "referralCode": "ABC12345"
-}
-
-CURL Example:
-
-curl -X POST https://referral-signup-api-production.up.railway.app/api/signup \
-  -H "Content-Type: application/json" \
-  -d "{\"name\":\"Yash\",\"email\":\"yash123@gmail.com\",\"password\":\"yash123\"}"
-
-🔹 2. Mark Profile as Completed
-POST /api/complete-profile/{userId}
-
-CURL Example:
-
-curl -X POST https://referral-signup-api-production.up.railway.app/api/complete-profile/2
-
-🔹 3. Get Referrals for a User
-GET /api/referrals/{userId}
-
-Returns users who used this user's referral code and completed their profile.
-
-CURL Example:
-
-curl https://referral-signup-api-production.up.railway.app/api/referrals/1
-
